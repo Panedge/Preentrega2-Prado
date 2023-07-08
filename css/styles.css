@@ -16,3 +16,58 @@ header .navbar .container-fluid{
 header .navbar .container-fluid .navbar-brand .logo-empresa{
     max-width: 240px;
 }
+
+/* Estilo del footer */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas: 
+    "Contactos Metodos"
+    "Telefono Metodos";
+    background-color: #F8F9FA;
+    padding: 20px;
+}
+
+footer h3{
+    margin-bottom: 10px;
+}
+
+footer .contactos{
+    grid-area: Contactos;
+    margin-left: 68px;
+}
+
+footer .telefono{
+    margin-top: 10px;
+    grid-area: Telefono;
+    margin-left: 68px;
+}
+
+footer .metodos-pago{
+    grid-area: Metodos;
+    margin-top: 25px;
+}
+
+footer .metodos-pago .metodos-pago-texto{
+    display: flex;
+    justify-content: center;
+    margin-right: 300px;
+}
+
+footer .metodos-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 300px;
+}
+
+footer .metodo-1, .metodo-2, .metodo-3, .metodo-4, .metodo-5, .metodo-6{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+}
