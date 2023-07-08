@@ -4,3 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Estilos general */
+
+/* Estilo del header */
+
+header .navbar .container-fluid{
+    background-color: #ffffff;
+}
+
+header .navbar .container-fluid .navbar-brand .logo-empresa{
+    max-width: 240px;
+}
