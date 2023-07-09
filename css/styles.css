@@ -17,9 +17,9 @@ header .navbar .container-fluid .navbar-brand .logo-empresa{
     max-width: 240px;
 }
 
-/* Estilos de main */
+/* Estilos de .main-index */
 
-main .titulo-index-principal{
+.main-index .titulo-index-principal{
     display: grid;
     grid-template-columns: repeat(2, 90% 10%);
     grid-template-rows: 1;
@@ -31,16 +31,19 @@ main .titulo-index-principal{
     padding: 10px;
 }
 
-main .titulo-index-principal h1{
+.main-index .titulo-index-principal h1{
     grid-area: h1;
     text-align: center;
 }
 
-main .titulo-index-principal .boton-ofertas{
+.main-index .titulo-index-principal .boton-ofertas{
     grid-area: boton;
+    justify-self: end;
+    margin-top: 15px;
+    width: 135px;
 }
 
-main .container-imagenes {
+.main-index .container-imagenes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
@@ -48,11 +51,16 @@ main .container-imagenes {
     padding: 50px;
   }
   
-  main .container-imagenes .item {
+  .main-index .container-imagenes .item {
     text-align: center;
 }
+
+.main-index .container-imagenes .item-1{
+    visibility: hidden;
+    grid-area: item-1;
+}
   
-main .container-imagenes .item .descuento{
+.main-index .container-imagenes .item .descuento{
     color: purple
 }
 
@@ -71,9 +79,9 @@ main .container-imagenes .item .descuento{
     cursor: pointer;
   }
 
-/* Estilos del section */
+/* Estilos del .section-index */
 
-section .container-lista{
+.section-index .container-lista{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
@@ -81,12 +89,12 @@ section .container-lista{
     padding: 50px;
 }
 
-section .container-lista .lista img {
+.section-index .container-lista .lista img {
     width: 100%;
     height: auto;
   }
 
-section .container-lista .lista p{
+.section-index .container-lista .lista p{
     text-align: center;
     font-size: 50px;
     z-index: 2000;
@@ -145,4 +153,65 @@ footer .metodo-1, .metodo-2, .metodo-3, .metodo-4, .metodo-5, .metodo-6{
     border-radius: 50%;
     background-color: #ccc;
     margin-right: 10px;
+}
+
+/* Estilos de main de ofertas */
+
+.main-ofertas .titulo-ofertas-principal .h1-ofertas{
+    text-align: center;
+    padding: 30px;
+}
+
+.main-ofertas .container-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 120px;
+    padding: 50px;
+  }
+  
+.main-ofertas .container-imagenes .item {
+    text-align: center;
+}
+
+.main-ofertas .container-imagenes .item-1{
+    visibility: hidden;
+    grid-area: item-1;
+}
+  
+.main-ofertas .container-imagenes .item .descuento{
+    color: purple
+}
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+/* Propiedades de mq */
+
+@media screen and (min-width:1000px){
+    .main-ofertas .container-imagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 120px;
+        padding: 50px;
+      }
+}
+
+@media screen and (max-width:720px){
+
+
+
 }
