@@ -232,6 +232,46 @@ footer .metodo-1, .metodo-2, .metodo-3, .metodo-4, .metodo-5, .metodo-6{
     cursor: pointer;
   }
 
+/* Estilos del main de productos */
+
+.main-producto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    padding:80px
+}
+
+.main-producto h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.main-producto .columna-producto img{
+    width: 500px;
+    height: auto;
+
+}
+
+.main-producto .columna-producto button{
+  display: inline-block;
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+.main-producto .columna-caracteristicas{
+    width: 60rem;
+}
+
 /* Propiedades de mq */
 
 @media screen and (min-width:1000px){
