@@ -170,14 +170,6 @@ footer .metodo-1, .metodo-2, .metodo-3, .metodo-4, .metodo-5, .metodo-6{
     padding: 50px;
   }
   
-.main-ofertas .container-imagenes .item {
-    text-align: center;
-}
-
-.main-ofertas .container-imagenes .item-1{
-    visibility: hidden;
-    grid-area: item-1;
-}
   
 .main-ofertas .container-imagenes .item .descuento{
     color: purple
@@ -192,6 +184,48 @@ footer .metodo-1, .metodo-2, .metodo-3, .metodo-4, .metodo-5, .metodo-6{
     display: block;
     width: 100%;
     padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+/* Estilos de main de lista */
+
+.main-lista .container-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 200px;
+    padding: 120px;
+  }
+
+.main-lista .container-imagenes .item-1{
+    visibility: hidden;
+    grid-area: item-1;
+}
+  
+.main-lista .container-imagenes .item .descuento{
+    color: purple
+}
+
+.main-lista .container-imagenes .item a{
+    text-decoration: none;
+}
+
+  .item img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .item button{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 15px;
     background-color: #4caf50;
     color: white;
     border: none;
