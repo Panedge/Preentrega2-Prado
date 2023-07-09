@@ -17,6 +17,56 @@ header .navbar .container-fluid .navbar-brand .logo-empresa{
     max-width: 240px;
 }
 
+/* Estilos de main */
+
+main .titulo-index-principal{
+    display: grid;
+    grid-template-columns: repeat(2, 90% 10%);
+    grid-template-rows: 1;
+
+    grid-template-areas: 
+    "h1 boton"
+    ;
+
+    padding: 10px;
+}
+
+main .titulo-index-principal h1{
+    grid-area: h1;
+    text-align: center;
+}
+
+main .titulo-index-principal .boton-ofertas{
+    grid-area: boton;
+}
+
+.container-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 90px;
+    padding: 50px;
+  }
+  
+  .item {
+    text-align: center;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
 /* Estilo del footer */
 
 footer {
