@@ -272,6 +272,70 @@ footer .metodo-1, .metodo-2, .metodo-3, .metodo-4, .metodo-5, .metodo-6{
     width: 60rem;
 }
 
+/* Estilos del main de carrito */
+
+.carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color:#f9f9f9 ;
+    margin-top: 90px;
+    margin-bottom: 120px;
+  }
+  
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .detalles-producto {
+    text-align: center;
+  }
+  
+  .imagen-producto img{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .cupon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .cupon input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .cupon button {
+    background-color: #00cc00;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+  }
+  
+
 /* Propiedades de mq */
 
 @media screen and (min-width:1000px){
