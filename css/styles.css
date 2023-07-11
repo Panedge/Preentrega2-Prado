@@ -404,7 +404,7 @@ footer .metodo-1,
   }
 }
 
-/* Propiedad de lista-telefono*/
+/* Propiedad lista-telefono*/
 
 @media screen and (max-width: 600px){
 
@@ -420,7 +420,7 @@ footer .metodo-1,
 
 }
 
-/* Propiedad de lista-tablet*/
+/* Propiedad lista-tablet*/
 
 @media screen and (max-width: 1024px){
 
@@ -440,3 +440,19 @@ footer .metodo-1,
     display: none;
   }
 }
+
+/* Propiedad ofertas-telefono */
+
+@media screen and (max-width: 600px){
+
+  .main-ofertas .container-imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+/* Propiedades ofertas-tablet */
+
+/* Propiedades carrito-telefono */
