@@ -460,3 +460,25 @@ footer .metodo-1,
 .main-carrito .carrito{
   width: 33rem;
 }
+
+/* Propiedades de producto-telefono */
+
+@media screen and (max-width:600px){
+  .main-producto{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  .main-producto .columna-caracteristicas{
+    width: 30rem;
+  }
+}
+
+/* Propiedades de producto-tablet */
+
+@media screen and (max-width:1024px){
+  .main-producto .columna-caracteristicas{
+  width: 30rem;
+}
+}
