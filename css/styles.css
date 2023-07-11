@@ -456,3 +456,7 @@ footer .metodo-1,
 /* Propiedades ofertas-tablet */
 
 /* Propiedades carrito-telefono */
+
+.main-carrito .carrito{
+  width: 33rem;
+}
