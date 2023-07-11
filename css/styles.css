@@ -218,6 +218,10 @@ footer .metodo-1,
   text-decoration: none;
 }
 
+.main-lista .container-imagenes .item p {
+  text-align: center;
+}
+
 .item img {
   width: 100%;
   height: 400px;
@@ -396,6 +400,43 @@ footer .metodo-1,
   }
 
   .main-index .titulo-index-principal .boton-ofertas {
+    display: none;
+  }
+}
+
+/* Propiedad de lista-telefono*/
+
+@media screen and (max-width: 600px){
+
+  .main-lista .container-imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main-lista .container-imagenes .item-i{
+    display: none;
+  }
+
+}
+
+/* Propiedad de lista-tablet*/
+
+@media screen and (max-width: 1024px){
+
+  .main-lista .container-imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 20rem;
+    margin: 12rem;
+  }
+
+
+  
+  .main-lista .container-imagenes .item-i{
     display: none;
   }
 }
