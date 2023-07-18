@@ -474,11 +474,18 @@ footer .metodo-1,
     width: 30rem;
   }
 }
-
 /* Propiedades de producto-tablet */
 
 @media screen and (max-width:1024px){
   .main-producto .columna-caracteristicas{
   width: 30rem;
 }
+}
+
+/* Propiedades MQ al Footer General */
+
+@media screen and (max-width:1023px){
+  footer .metodos-pago{
+    display: none;
+  }
 }
