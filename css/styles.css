@@ -283,7 +283,7 @@ footer .metodo-1,
 
 /* Estilos del main de carrito */
 
-.carrito {
+.main-carrito .carrito {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,8 +320,8 @@ footer .metodo-1,
 
 .imagen-producto img {
   margin-top: 10px;
-  width: 200px;
-  height: 200px;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 .cupon {
@@ -432,7 +432,6 @@ footer .metodo-1,
     align-items: center;
     padding: 0px;
     width: 20rem;
-    margin: 12rem;
   }
 
 
@@ -458,8 +457,11 @@ footer .metodo-1,
 
 /* Propiedades carrito-telefono */
 
-.main-carrito .carrito{
-  width: 33rem;
+@media screen and (max-width:600px)
+{
+  main.carrito .imagen-producto img{
+    width: 10px;
+  }
 }
 
 /* Propiedades de producto-telefono */
@@ -468,11 +470,16 @@ footer .metodo-1,
   .main-producto{
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 1rem;
+  }
+
+  .main-producto .columna-producto img{
+    width: 20rem;
   }
 
   .main-producto .columna-caracteristicas{
-    width: 30rem;
+    max-width: 20rem;
+    overflow: scroll;
   }
 }
 /* Propiedades de producto-tablet */
