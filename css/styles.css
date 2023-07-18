@@ -389,9 +389,10 @@ footer .metodo-1,
 @media screen and (max-width:1024px){
 
   .main-index .container-imagenes{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
   }
 
